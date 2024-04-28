@@ -1,5 +1,5 @@
 ctransformers==0.2.5  # this is used the quantization of the model, if we are used langchain we need this
-sentencetransformers==2.2.2
+sentence-transformers==2.2.2
 pinecone-client
 langchain==0.0.225
 flask
