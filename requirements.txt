@@ -1,5 +1,9 @@
-ctransformers==0.2.5  # this is used the quantization of the model, if we are used langchain we need this
-sentence-transformers==2.2.2
+ctransformers
+sentence-transformers
 pinecone-client
-langchain==0.0.225
+langchain
 flask
+pypdf
+pandas
+langchain_pinecone
+lark
