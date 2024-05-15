@@ -7,3 +7,5 @@ pypdf
 pandas
 langchain_pinecone
 lark
+python-dotenv
+-e .
