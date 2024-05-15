@@ -9,7 +9,7 @@ from pinecone import Pinecone, ServerlessSpec
 load_dotenv()
 
 PINECONE_API_KEY = os.environ.get("PINECONE_API_KEY")
-print("PINECONE_API_KEY:", PINECONE_API_KEY)
+# print("PINECONE_API_KEY:", PINECONE_API_KEY)
 
 
 
@@ -22,13 +22,14 @@ embeddings=encode_text_chunks(text_chunks)
 # #***************store the data in pinecone vector store***************
 
 
-
+# Initialize Pinecone
 pc = Pinecone(api_key=PINECONE_API_KEY)
 index = pc.Index("mymchatbot")
-print(index.describe_index_stats())
 
 # Specify your namespace
 namespace = "book1"
+
+# print(index.describe_index_stats())
 
 # Create a Pinecone ids
 import uuid
